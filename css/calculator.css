@@ -1,0 +1,72 @@
+body {
+    background-color: #171717;  
+}
+
+.calculator__container {
+    width: 300px;
+    margin: 100px auto;
+}
+
+.calculator__window {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    position: relative;
+}
+
+.data-input {
+    width: 90%;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    height: 30px;
+    position: absolute;
+    bottom: 5px;
+    left: 30px;
+    color: #171717;
+    font-size: 25px;
+}
+
+.data-input:active, .data-input:focus,
+.data-input:focus-visible {
+    border: none;
+    outline: none;   
+}
+
+.button {
+    width: 72px;
+    height: 60px;
+    border: none;
+    background-color: #39354f;
+    color: #fff;
+    font-size: 20px;
+    margin: 0px;
+    margin-bottom: 3px;
+    padding: 0px;
+   font-weight: 200;
+   cursor: pointer;
+}
+
+.act {
+    background-color: #4b4663;
+}
+
+.action {
+    background-color: #a897fe;
+}
+
+.equals {
+    background-color: #7d71b9;
+}
+
+.display {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.display__projection {
+    color: #171717;
+    font-size: 25px;
+    font-weight: 500;
+}

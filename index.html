@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/calculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <div class="calculator__container">
+        <div class="calculator__window">
+            <div class="display"><span id="display__projection" class="display__projection"></span></div>
+            <input value='' onkeypress='validate(event)' class="data-input">
+        </div>
+
+        <div class="button__block">
+            <button class="button clear act">AC</button>
+            <button onclick="insertNegative('-')" class="button act">+/-</button>
+            <button onclick="insertPercent('/100')" class="button act">%</button>
+            <button onclick="insertAction('/')" class="button action">/</button>
+            <button onclick="insertNumber(7)" class="button number">7</button>
+            <button onclick="insertNumber(8)" class="button number">8</button>
+            <button onclick="insertNumber(9)" class="button number">9</button>
+            <button onclick="insertAction('*')" class="button action">x</button>
+            <button onclick="insertNumber(4)" class="button number">4</button>
+            <button onclick="insertNumber(5)" class="button number">5</button>
+            <button onclick="insertNumber(6)" class="button number">6</button>
+            <button onclick="insertAction('-')"  class="button action">-</button>
+            <button onclick="insertNumber(1)" class="button number">1</button>
+            <button onclick="insertNumber(2)" class="button number">2</button>
+            <button onclick="insertNumber(3)" class="button number">3</button>
+            <button onclick="insertAction('+')" class="button action">+</button>
+            <button onclick="insertNumber(0)" class="button number">0</button>
+            <button onclick="insertNumber('.')" class="button number">.</button>
+            <button class="button del">del</button>
+            <button onclick="insertEquals('=')" class="button equals">=</button>
+        </div>
+    </div>
+
+   
+
+    <script src="js/calculator.js"></script>
+</body>
+</html>
